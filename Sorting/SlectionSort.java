@@ -12,13 +12,13 @@ public class SlectionSort {
         //     arr[i]=s.nextInt();
         // }
 
-        int [] arr={8,4,1,9,-3,6,5};
+        int [] arr={7,3,4,7,8,1};
 
         for(int i=0;i<arr.length-1;i++){
-            int min=Integer.MIN_VALUE;
+            int min=Integer.MAX_VALUE;
             int minIndex=-1;
             for(int j=i;j<arr.length;j++){
-            if(min<arr[j]){
+            if(min>arr[j]){
                 min=arr[j];
                 minIndex=j;
             }
